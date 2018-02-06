@@ -1,0 +1,123 @@
+*{
+	margin:0;
+	padding:0;
+	}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width:100%
+	max-width:960px;
+	font-family:'Roboto', sans-serif;
+	background-color:#878787;
+	background-image:url("../images/bgtexture.png");
+}
+header {
+	width:100%
+	padding: 50px 0 30px 0;
+	background-color:#232323;
+	background-image:url("../images/bgtexture.png");
+}
+header img{
+	padding: 1.5% 0; 
+}
+
+footer {
+	background-color: #232323;
+	clear: both;
+}
+.img-circle {
+	border-radius: 50%;
+	border: 3px solid #232323;
+	max-height: 150px;
+	max-width: 150px;
+	background:white;
+	padding:10px;
+	margin:10px;
+}
+main img:hover{
+	background:#007180;
+}
+.hoverinfo {
+  font-size: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  height:200px;
+  width:210px;
+  float:left;
+margin-left:50px;
+}
+.hoverinfo p {
+  display: none;
+  color: #000000;
+  position:relative;
+  z-index:10000;
+  left:185px;
+  bottom:150px;
+  width: 100px;
+}
+.hoverinfo:hover p {
+  background-color: white;
+  display: block;
+  border: 3px solid #232323;
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 33.3333%;     
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #232323;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: #007180;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.slicknav_menu {
+	display: none;
+}
+
+/*Mobile Stuff*/
+@media only screen and (max-width: 767px) {
+	header img { float: none; }
+	header { text-align: center; }
+	section {
+		float: none;
+		width: 95%;                     
+	}
+
+	#nav_menu {
+		display: none;
+	}
+	.slicknav_menu {
+		display: block;
+		background-color: #232323 !important;
+	}
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+}
